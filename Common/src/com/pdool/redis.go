@@ -1,4 +1,4 @@
-package GxMisc
+package Core
 
 import (
 	"container/list"
