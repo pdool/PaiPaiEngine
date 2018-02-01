@@ -1,4 +1,4 @@
-package Core
+package Event
 
 import (
 	"container/list"
@@ -14,7 +14,7 @@ func NewQueue() *Queue {
 	return &Queue{l: list.New()}
 }
 
-func (q *Queue) PushBack(v interface{}) {
+func (q *Queue) Push(v interface{}) {
 	if v == nil {
 		return
 	}
@@ -23,19 +23,15 @@ func (q *Queue) PushBack(v interface{}) {
 	q.l.PushBack(v)
 }
 
-func (q *Queue) Front() *list.Element {
+func (q *Queue) Pop() *list.Element {
 	q.m.Lock()
 	defer q.m.Unlock()
-	return q.l.Front()
-}
-
-func (q *Queue) Remove(e *list.Element) {
-	if e == nil {
-		return
+	element := q.l.Front()
+	if element == nil {
+		return nil
 	}
-	q.m.Lock()
-	defer q.m.Unlock()
-	q.l.Remove(e)
+	q.l.Remove(element)
+	return element
 }
 
 func (q *Queue) Len() int {

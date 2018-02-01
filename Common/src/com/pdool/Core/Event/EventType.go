@@ -1,4 +1,4 @@
-package Core
+package Event
 
 const (
 	EventType_Net          = iota //	网络消息
