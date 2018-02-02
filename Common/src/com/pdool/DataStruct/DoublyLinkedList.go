@@ -2,7 +2,7 @@ package DataStruct
 
 import "errors"
 
-// DoublyLinkedList ...
+// 双向链表
 type DoublyLinkedList struct {
 	length int
 	head   *DNode
