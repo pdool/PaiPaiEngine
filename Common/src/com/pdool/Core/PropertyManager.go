@@ -1,4 +1,4 @@
-package Data
+package Core
 
 type RecordManager struct{
 	guid GUID

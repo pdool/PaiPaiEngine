@@ -1,8 +1,7 @@
-package Data
+package Core
 
 import (
 	"container/list"
-	"com/pdool/Core/Event/CallBack"
 )
 
 type Property struct {
@@ -40,7 +39,7 @@ func (prop *Property) SetValue(value interface{}) {
 	prop.value.SetData(value)
 
 	for cb := prop.callbacks.Front(); cb != nil; cb = cb.Next() {
-		handler := cb.Value.(CallBack.IPropHandler)
+		handler := cb.Value.(IPropHandler)
 		handler.Handle(prop.guid,prop.name,prop.oldValue,prop.newValue)
 	}
 }
@@ -60,7 +59,7 @@ func (prop *Property) GetObject() interface{} {
 	return prop.value.GetObject()
 }
 
-func (prop *Property) AddCallBack(cb CallBack.IPropHandler) {
+func (prop *Property) AddCallBack(cb IPropHandler) {
 	if prop.callbacks == nil {
 		prop.callbacks = list.New()
 	}

@@ -1,4 +1,4 @@
-package Event
+package Core
 
 import (
 	"container/list"

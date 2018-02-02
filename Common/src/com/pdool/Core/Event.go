@@ -1,4 +1,4 @@
-package Event
+package Core
 
 type Event struct {
 	EventId       int
