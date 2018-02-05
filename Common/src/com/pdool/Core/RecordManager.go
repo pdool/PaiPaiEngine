@@ -16,9 +16,9 @@ func NewRecordManager(guid GUID) *RecordManager {
 	return rMgr
 }
 
-func (p *RecordManager) AddRecord(recordName string, maxRow int, varTypes RecordRow, colName RecordRow) (*Record) {
+func (p *RecordManager) AddRecord(recordName string, maxRow int, colProp DataStruct.Dictionary, isSave bool) (*Record) {
 	if !p.records.Has(recordName) {
-		record := NewRecord(p.guid, recordName, maxRow, varTypes, colName)
+		record := NewRecord(p.guid, recordName, maxRow, colProp, isSave)
 		p.records.Set(recordName, record)
 		return record
 	}
@@ -26,20 +26,4 @@ func (p *RecordManager) AddRecord(recordName string, maxRow int, varTypes Record
 }
 func (p *RecordManager) GetRecord(record string) (*Record) {
 	return p.records.Get(record).(*Record)
-}
-func (p *RecordManager) GetRecordInt(recordName string, row int, col int) int {
-	rec := p.records.Get(recordName)
-	if rec != nil {
-		return rec.(*Record).GetValue(col).(int)
-	}
-	return 0
-}
-
-func (rMgr *RecordManager) AddCallBack(recordName string, cb IRecordHandler) bool {
-	rec := rMgr.records.Get(recordName).(*Record)
-	if rec != nil {
-		rec.AddCallBack(cb)
-		return true
-	}
-	return false
 }

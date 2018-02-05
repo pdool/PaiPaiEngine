@@ -5,60 +5,50 @@ import (
 )
 
 type Property struct {
-	guid      GUID
-	name      string
-	value     Data
-	oldValue  Data
-	newValue  Data
-	callbacks *list.List
+	guid         GUID        //	对象id
+	name         string      //	属性名
+	propType     int         //	属性类型
+	flag         int         //	可见属性
+	defaultValue interface{} //	默认值
+	isSave       bool        //	是否保存
+
+	value     interface{} //	值
+	callbacks *list.List  //	回调
 }
 
-/**
 
- */
-func NewProperty2(guid GUID, name string) *Property {
+func NewProperty(guid GUID, name string, propType int,defaultValue interface{},isSave bool) *Property {
 	p := new(Property)
 	p.guid = guid
 	p.name = name
+	p.propType = propType
+	p.isSave = isSave
 	return p
 }
-func NewProperty3(guid GUID, name string, value interface{}) *Property {
-	p := new(Property)
-	p.guid = guid
-	p.name = name
-	p.value = Data{value: value}
-	return p
-}
-func (prop *Property) GetName() string {
+//	获取属性名
+func (prop *Property) GetPropName() string {
 	return prop.name
 }
-
+//	获取属性类型
+func (prop *Property) GetPropType() int {
+	return prop.propType
+}
+//	设置属性值
 func (prop *Property) SetValue(value interface{}) {
-	prop.oldValue = prop.value
-	prop.newValue = Data{value: value}
-	prop.value.SetData(value)
+	oldValue := prop.value
+	newValue := value
+	prop.value = value
 
 	for cb := prop.callbacks.Front(); cb != nil; cb = cb.Next() {
 		handler := cb.Value.(IPropHandler)
-		handler.Handle(prop.guid,prop.name,prop.oldValue,prop.newValue)
+		handler.Handle(prop.guid, prop.name, oldValue, newValue)
 	}
 }
-
-func (prop *Property) GetInt() int {
-
-	return prop.value.GetInt()
+//	获取属性值
+func (prop *Property) GetValue()(interface{}){
+	return prop.value
 }
-func (prop *Property) GetFloat() float32 {
-	return prop.value.GetFloat()
-}
-func (prop *Property) GetString() string {
-
-	return prop.value.GetString()
-}
-func (prop *Property) GetObject() interface{} {
-	return prop.value.GetObject()
-}
-
+//	添加回调
 func (prop *Property) AddCallBack(cb IPropHandler) {
 	if prop.callbacks == nil {
 		prop.callbacks = list.New()

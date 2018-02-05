@@ -133,11 +133,6 @@ func (l *LinkedList) Size() int {
 	return l.length
 }
 
-// Length ...
-func (l *LinkedList) Length() int {
-	return l.length
-}
-
 // Head ...
 func (l *LinkedList) Head() *Node {
 	return l.head
@@ -164,4 +159,28 @@ func (l *LinkedList) Get(position int) interface{} {
 		}
 	}
 	return nil
+}
+func (l *LinkedList) Set(position int, value interface{}) bool {
+	if position >= 0 && position < l.length {
+		current := l.head
+		index := 0
+		for {
+			if position == index {
+				current.Element = value
+				return true
+			}
+			if current == nil {
+				break
+			}
+			index++
+			current = current.Next
+		}
+	}
+	return false
+}
+
+func (l *LinkedList) Clear() bool {
+	l.head = nil
+	l.length = 0
+	return true
 }

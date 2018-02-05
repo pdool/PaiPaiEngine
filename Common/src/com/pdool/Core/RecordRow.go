@@ -27,3 +27,7 @@ func (row *RecordRow) GetObj(index int) GUID {
 	i := row.values[index]
 	return i.(GUID)
 }
+func  (row *RecordRow) GetValue(index int) interface{} {
+	i := row.values[index]
+	return i
+}
