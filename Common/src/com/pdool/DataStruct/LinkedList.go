@@ -142,4 +142,26 @@ func (l *LinkedList) Length() int {
 func (l *LinkedList) Head() *Node {
 	return l.head
 }
-
+func (l *LinkedList) Get(position int) interface{} {
+	if position >= 0 && position < l.length {
+		current := l.head
+		index := 0
+		for {
+			if position == index {
+				ele := current.Element
+				current = current.Next
+				l.length--
+				if index == 0 {
+					l.head = current
+				}
+				return ele
+			}
+			if current == nil {
+				break
+			}
+			index++
+			current = current.Next
+		}
+	}
+	return nil
+}
