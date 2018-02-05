@@ -16,7 +16,7 @@ type Record struct {
 	oldVar *RecordRow
 	newVar *RecordRow
 }
-func NewRecord(guid GUID,recordName string,maxRow int, varTypes RecordRow, colName RecordRow){
+func NewRecord(guid GUID,recordName string,maxRow int, varTypes RecordRow, colName RecordRow)(*Record){
 	r := new(Record)
 	r.guid = guid
 	r.recordName = recordName
@@ -27,6 +27,7 @@ func NewRecord(guid GUID,recordName string,maxRow int, varTypes RecordRow, colNa
 	r.oldVar = new(RecordRow)
 	r.newVar = new(RecordRow)
 	r.callbacks = list.New()
+	return r
 }
 
 func (r *Record)GetRowNum()int{
@@ -40,4 +41,13 @@ func (r *Record)GetMaxRowNum()int{
 }
 func (r *Record)GetColumnType(column int)int{
 	return r.varTypes.values[column].(int)
+}
+func (r *Record)GetValue(column int)interface{}{
+	return r.rows.Get(column)
+}
+func (r *Record) AddCallBack(cb IRecordHandler) {
+	if r.callbacks == nil {
+		r.callbacks = list.New()
+	}
+	r.callbacks.PushBack(cb)
 }

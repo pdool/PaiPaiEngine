@@ -5,6 +5,7 @@ import (
 	"com/pdool/Core"
 	"testing"
 )
+
 func TestStack(t *testing.T) {
 	//s := Stack{}
 	//
