@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="872688ed-73d0-47f0-95f0-bbb2f87083ea" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Common/src/com/pdool/Core/EventMgr.go" afterPath="$PROJECT_DIR$/Common/src/com/pdool/Core/EventMgr.go" />
-      <change beforePath="$PROJECT_DIR$/Common/src/com/pdool/Core/Queue.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Common/src/com/pdool/Core/Record.go" afterPath="$PROJECT_DIR$/Common/src/com/pdool/Core/Record.go" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
