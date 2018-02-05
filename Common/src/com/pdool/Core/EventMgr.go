@@ -3,6 +3,7 @@ package Core
 import (
 	"sync"
 	"fmt"
+	"com/pdool/DataStruct"
 )
 
 var eventMgrInstance *EventMgr
@@ -12,26 +13,26 @@ func GetEventMgr() *EventMgr {
 	eventLock.Lock()
 	defer eventLock.Unlock()
 	if eventMgrInstance == nil {
-		eventMgrInstance = &EventMgr{msgQueue: NewQueue()}
+		eventMgrInstance = &EventMgr{msgQueue: &DataStruct.Queue{}}
 	}
 	return eventMgrInstance
 }
 
 type EventMgr struct {
-	msgQueue *Queue
+	msgQueue *DataStruct.Queue
 }
 
 func (eventMgr *EventMgr) Start() {
 
-	for eventMgr.msgQueue.Len() > 0 {
-		ele := eventMgr.msgQueue.Pop()
-		event := ele.Value.(*Event)
+	for eventMgr.msgQueue.Size() > 0 {
+		ele := eventMgr.msgQueue.Dequeue()
+		event := ele.(*Event)
 		go dealEvent(event)
 	}
 }
 
 func(eventMgr *EventMgr) Push(event *Event){
-	eventMgr.msgQueue.Push(event)
+	eventMgr.msgQueue.Enqueue(event)
 }
 
 func dealEvent(event *Event) {

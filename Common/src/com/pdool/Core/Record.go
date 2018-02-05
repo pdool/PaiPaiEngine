@@ -1,6 +1,9 @@
 package Core
 
-import "container/list"
+import (
+	"container/list"
+	"com/pdool/DataStruct"
+)
 
 type Record struct {
 	guid GUID
@@ -8,7 +11,7 @@ type Record struct {
 	maxRow int
 	varTypes RecordRow
 	colName RecordRow
-	rows map[int]RecordRow
+	rows DataStruct.LinkedList
 	callbacks *list.List
 	oldVar *RecordRow
 	newVar *RecordRow
@@ -20,14 +23,14 @@ func NewRecord(guid GUID,recordName string,maxRow int, varTypes RecordRow, colNa
 	r.maxRow = maxRow
 	r.varTypes = varTypes
 	r.colName = colName
-	r.rows = make(map[int]RecordRow)
+	r.rows = DataStruct.LinkedList{}
 	r.oldVar = new(RecordRow)
 	r.newVar = new(RecordRow)
 	r.callbacks = list.New()
 }
 
 func (r *Record)GetRowNum()int{
-	return len(r.rows)
+	return r.rows.Size()
 }
 func (r *Record)GetColNum()int{
 	return len(r.varTypes.values)
