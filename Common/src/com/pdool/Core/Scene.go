@@ -3,6 +3,7 @@ package Core
 import (
 	"com/pdool/DataStruct"
 	"com/pdool/Math"
+	"fmt"
 )
 
 type Scene struct {
@@ -16,6 +17,7 @@ func CreateScene(sceneId int) *Scene {
 	scene := new(Scene)
 	scene.groups = DataStruct.Dictionary{}
 	scene.groupIndex = -1
+	scene.sceneId = sceneId
 	scene.relivePos = DataStruct.LinkedList{}
 	return scene
 }
@@ -23,6 +25,8 @@ func CreateScene(sceneId int) *Scene {
 //	创建一个分线
 func (s *Scene) NewGroupId() int {
 	s.groupIndex++
+	fmt.Println("创建一个分线")
+	fmt.Println(s.groupIndex)
 	return s.groupIndex
 }
 

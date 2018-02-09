@@ -124,6 +124,6 @@ func (r *Record) DelRow(row int) bool {
 func (r *Record) doCB(row int, col int) {
 	for cb := r.callbacks.Front(); cb != nil; cb = cb.Next() {
 		handler := cb.Value.(IRecordHandler)
-		handler.Handle(r.guid, r.recordName, r.opType, row, col, *r.oldVar, *r.newVar)
+		handler.RecordHandle(r.guid, r.recordName, r.opType, row, col, *r.oldVar, *r.newVar)
 	}
 }

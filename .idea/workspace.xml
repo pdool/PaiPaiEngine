@@ -2,23 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="872688ed-73d0-47f0-95f0-bbb2f87083ea" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Common/src/com/pdool/Constant/PlayerProperty.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Common/src/com/pdool/Constant/PlayerRecord.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Common/src/com/pdool/Constat.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Common/src/com/pdool/Core/CallBacks.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Common/src/com/pdool/Core/ConfigManager.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Common/src/com/pdool/Core/DataManager.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Common/src/com/pdool/Core/Kernel.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Common/src/com/pdool/Core/Scene.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Common/src/com/pdool/Core/SceneGroup.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Common/src/com/pdool/Core/SceneManager.go" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Common/src/com/pdool/Math/Vector.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Common/src/com/pdool/Core/ModuleMgr.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Common/src/com/pdool/main/Main.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/GameServer/src/main/FriendModule.go" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/GameServer/src/main/gameServer.go" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Common/src/com/Test/Aain.go" afterPath="$PROJECT_DIR$/Common/src/com/Test/Aain.go" />
-      <change beforePath="$PROJECT_DIR$/Common/src/com/pdool/Core/IPropertyHandler.go" afterPath="$PROJECT_DIR$/Common/src/com/pdool/Core/IPropertyHandler.go" />
-      <change beforePath="$PROJECT_DIR$/Common/src/com/pdool/Core/IRecordHandler.go" afterPath="$PROJECT_DIR$/Common/src/com/pdool/Core/IRecordHandler.go" />
-      <change beforePath="$PROJECT_DIR$/Common/src/com/pdool/Core/Object.go" afterPath="$PROJECT_DIR$/Common/src/com/pdool/Core/Object.go" />
-      <change beforePath="$PROJECT_DIR$/Common/src/com/pdool/Core/log.go" afterPath="$PROJECT_DIR$/Common/src/com/pdool/Core/LogManager.go" />
+      <change beforePath="$PROJECT_DIR$/Common/src/com/pdool/Core/CallBacks.go" afterPath="$PROJECT_DIR$/Common/src/com/pdool/Core/CallBacks.go" />
+      <change beforePath="$PROJECT_DIR$/Common/src/com/pdool/Core/GUID.go" afterPath="$PROJECT_DIR$/Common/src/com/pdool/Core/GUID.go" />
+      <change beforePath="$PROJECT_DIR$/Common/src/com/pdool/Core/Property.go" afterPath="$PROJECT_DIR$/Common/src/com/pdool/Core/Property.go" />
+      <change beforePath="$PROJECT_DIR$/Common/src/com/pdool/Core/Record.go" afterPath="$PROJECT_DIR$/Common/src/com/pdool/Core/Record.go" />
+      <change beforePath="$PROJECT_DIR$/Common/src/com/pdool/Core/Scene.go" afterPath="$PROJECT_DIR$/Common/src/com/pdool/Core/Scene.go" />
+      <change beforePath="$PROJECT_DIR$/Common/src/com/pdool/Core/SceneManager.go" afterPath="$PROJECT_DIR$/Common/src/com/pdool/Core/SceneManager.go" />
+      <change beforePath="$PROJECT_DIR$/GameServer/GameServer.iml" afterPath="$PROJECT_DIR$/GameServer/GameServer.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,23 +26,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Kernel.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/Kernel.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SceneManager.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SceneManager.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/SceneManager.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="60" column="16" lean-forward="true" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
+            <state relative-caret-position="150">
+              <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
               <folding>
-                <element signature="e#14#117#0" expanded="true" />
+                <element signature="e#14#124#0" expanded="true" />
+                <element signature="n#!!block;n#SwitchScene#0" expanded="false" />
                 <element signature="n#!!block;n#afterLeaveSceneGroup#0" expanded="false" />
                 <element signature="n#!!block;n#beforeEnterSceneGroup#0" expanded="false" />
                 <element signature="n#!!block;n#afterEnterSceneGroup#0" expanded="false" />
@@ -55,87 +42,85 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EventMgr.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/EventMgr.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataManager.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/DataManager.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-              <folding>
-                <element signature="e#14#56#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Aain.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/src/com/Test/Aain.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-              <folding>
-                <element signature="e#14#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IPropertyHandler.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/IPropertyHandler.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Property.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/Property.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="42" column="23" lean-forward="false" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CallBacks.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/CallBacks.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="23" column="63" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Scene.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/Scene.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="67" column="16" lean-forward="false" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+            <state relative-caret-position="375">
+              <caret line="19" column="27" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ModuleMgr.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/ModuleMgr.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CompentMgr.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/CompentMgr.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="16" column="19" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="16" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gameServer.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/GameServer/src/main/gameServer.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
               <folding>
-                <element signature="e#14#66#0" expanded="true" />
+                <element signature="e#14#49#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Object.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/Object.go">
+      <file leaf-file-name="FriendModule.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GameServer/src/main/FriendModule.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="175">
+              <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+              <folding>
+                <element signature="e#14#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TimeMgr.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/TimeMgr.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="type.go" pinned="false" current-in-tab="false">
+        <entry file="file://C:/Go/src/reflect/type.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34750">
+              <caret line="1397" column="29" lean-forward="false" selection-start-line="1397" selection-start-column="29" selection-end-line="1397" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecordManager.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/RecordManager.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -186,12 +171,11 @@
     <option name="urls">
       <list>
         <option value="file://$PROJECT_DIR$/Common" />
-        <option value="file://$PROJECT_DIR$/GameServer" />
         <option value="file://$PROJECT_DIR$/LoginMgr" />
         <option value="file://$PROJECT_DIR$/ProxyServer" />
         <option value="file://$PROJECT_DIR$/WorldMgr" />
         <option value="file://$PROJECT_DIR$/BossMgr" />
-        <option value="file://$PROJECT_DIR$/Test" />
+        <option value="file://$PROJECT_DIR$/GameServer" />
       </list>
     </option>
   </component>
@@ -208,16 +192,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Common/src/com/pdool/DataStruct/Set.go" />
-        <option value="$PROJECT_DIR$/Common/src/com/pdool/DataStruct/sss.go" />
-        <option value="$PROJECT_DIR$/Common/src/com/pdool/DataStruct/Stack.go" />
-        <option value="$PROJECT_DIR$/Common/src/com/pdool/DataStruct/LinkedList2.go" />
-        <option value="$PROJECT_DIR$/Common/src/com/pdool/DataStruct/DoublyLinkedList.go" />
-        <option value="$PROJECT_DIR$/Common/src/com/pdool/DataStruct/Queue.go" />
-        <option value="$PROJECT_DIR$/Common/src/com/pdool/DataStruct/xx.go" />
-        <option value="$PROJECT_DIR$/Common/src/com/pdool/DataStruct/binarySearchTree.go" />
-        <option value="$PROJECT_DIR$/Common/src/com/pdool/DataStruct/binarySearchTree_test.go" />
-        <option value="$PROJECT_DIR$/Common/src/com/pdool/DataStruct/dictionary.go" />
         <option value="$PROJECT_DIR$/Common/src/com/pdool/DataStruct/doublyLinkedList_test.go" />
         <option value="$PROJECT_DIR$/Common/src/com/pdool/DataStruct/linkedList_test.go" />
         <option value="$PROJECT_DIR$/Common/src/com/pdool/DataStruct/priorityQueue.go" />
@@ -237,7 +211,6 @@
         <option value="$PROJECT_DIR$/Common/src/com/pdool/Core/RecordRow.go" />
         <option value="$PROJECT_DIR$/Common/src/com/pdool/Core/Util.go" />
         <option value="$PROJECT_DIR$/Common/src/com/pdool/Core/Constant.go" />
-        <option value="$PROJECT_DIR$/Common/src/com/pdool/Core/Property.go" />
         <option value="$PROJECT_DIR$/Common/src/com/pdool/Core/PropertyManager.go" />
         <option value="$PROJECT_DIR$/Common/src/com/pdool/Core/AAAAA.go" />
         <option value="$PROJECT_DIR$/Common/src/com/pdool/DataStruct/linkedList.go" />
@@ -249,16 +222,27 @@
         <option value="$PROJECT_DIR$/Common/src/com/pdool/Core/IRecordHandler.go" />
         <option value="$PROJECT_DIR$/Common/src/com/pdool/Math/Vector4.go" />
         <option value="$PROJECT_DIR$/Common/src/com/pdool/Math/Vector.go" />
-        <option value="$PROJECT_DIR$/Common/src/com/pdool/Core/Scene.go" />
         <option value="$PROJECT_DIR$/Common/src/com/pdool/Constat.go" />
         <option value="$PROJECT_DIR$/Common/src/com/pdool/Constant/PlayerRecord.go" />
         <option value="$PROJECT_DIR$/Common/src/com/pdool/Core/Kernel.go" />
         <option value="$PROJECT_DIR$/Common/src/com/pdool/Constant/PlayerProperty.go" />
-        <option value="$PROJECT_DIR$/Common/src/com/pdool/Core/CallBacks.go" />
         <option value="$PROJECT_DIR$/Common/src/com/pdool/Core/Object.go" />
-        <option value="$PROJECT_DIR$/Common/src/com/Test/Aain.go" />
-        <option value="$PROJECT_DIR$/Common/src/com/pdool/Core/SceneManager.go" />
         <option value="$PROJECT_DIR$/Common/src/com/pdool/Core/DataManager.go" />
+        <option value="$PROJECT_DIR$/Common/src/com/Test/Aain.go" />
+        <option value="$PROJECT_DIR$/Common/src/com/pdool/Core/GUID.go" />
+        <option value="$PROJECT_DIR$/Common/src/com/pdool/Core/Property.go" />
+        <option value="$PROJECT_DIR$/Common/src/com/pdool/Core/CallBacks.go" />
+        <option value="$PROJECT_DIR$/Common/src/com/pdool/main/Main.go" />
+        <option value="$PROJECT_DIR$/Common/src/com/pdool/Core/ModuleMgr.go" />
+        <option value="$PROJECT_DIR$/Common/src/com/pdool/Core/IMgr.go" />
+        <option value="$PROJECT_DIR$/Common/src/com/pdool/Core/SceneManager.go" />
+        <option value="$PROJECT_DIR$/Common/src/com/pdool/Core/Scene.go" />
+        <option value="$PROJECT_DIR$/GameServer/main/main.go" />
+        <option value="$PROJECT_DIR$/GameServer/FriendModule/FriendModule.go" />
+        <option value="$PROJECT_DIR$/GameServer/main/FriendModule.go" />
+        <option value="$PROJECT_DIR$/GameServer/FriendModule/Handler.go" />
+        <option value="$PROJECT_DIR$/GameServer/main/gameServer.go" />
+        <option value="$PROJECT_DIR$/GameServer/src/main/gameServer.go" />
       </list>
     </option>
   </component>
@@ -273,6 +257,28 @@
     <option name="y" value="8" />
     <option name="width" value="1867" />
     <option name="height" value="1092" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>GeneralGo</id>
+          </State>
+          <State>
+            <id>Go</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>GoUnresolvedReference</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -292,7 +298,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -321,45 +327,26 @@
             <path>
               <item name="PaiPaiEngine" type="b2602c69:ProjectViewProjectNode" />
               <item name="PaiPaiEngine" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="pdool" type="462c0819:PsiDirectoryNode" />
+              <item name="GameServer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PaiPaiEngine" type="b2602c69:ProjectViewProjectNode" />
               <item name="PaiPaiEngine" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="pdool" type="462c0819:PsiDirectoryNode" />
-              <item name="Constant" type="462c0819:PsiDirectoryNode" />
+              <item name="GameServer" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PaiPaiEngine" type="b2602c69:ProjectViewProjectNode" />
               <item name="PaiPaiEngine" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
+              <item name="GameServer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="pdool" type="462c0819:PsiDirectoryNode" />
-              <item name="Core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PaiPaiEngine" type="b2602c69:ProjectViewProjectNode" />
               <item name="PaiPaiEngine" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
+              <item name="GameServer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="pdool" type="462c0819:PsiDirectoryNode" />
-              <item name="DataStruct" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PaiPaiEngine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PaiPaiEngine" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="Test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PaiPaiEngine" type="b2602c69:ProjectViewProjectNode" />
@@ -370,7 +357,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
@@ -383,29 +370,29 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gameserver-1-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/GameServer" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
-    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="GO_FMT" value="false" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\GoWorkSpace\PaiPaiEngine\Common\src\com\pdool\DataStruct" />
-      <recent name="E:\GoWorkSpace\PaiPaiEngine\Common\src\com\pdool\Core" />
-      <recent name="E:\GoWorkSpace\PaiPaiEngine\Common\src\com\pdool\Core\Event" />
-      <recent name="E:\GoWorkSpace\PaiPaiEngine\Common\src\com\pdool" />
-      <recent name="E:\GoWorkSpace\PaiPaiEngine\Common\src\com\pdool\Event" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\GoWorkSpace\PaiPaiEngine\Common\src\com\pdool\Core\Event\CallBack" />
       <recent name="E:\GoWorkSpace\PaiPaiEngine\Common\src\com\pdool\log" />
       <recent name="E:\GoWorkSpace\PaiPaiEngine\Common\src\com\pdool\Time" />
       <recent name="E:\GoWorkSpace\PaiPaiEngine\Common\src\com\pdool" />
       <recent name="E:\GoWorkSpace\PaiPaiEngine\BossMgr\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\GoWorkSpace\PaiPaiEngine\GameServer\src" />
+      <recent name="E:\GoWorkSpace\PaiPaiEngine\GameServer\main" />
+      <recent name="E:\GoWorkSpace\PaiPaiEngine\GameServer" />
+      <recent name="E:\GoWorkSpace\PaiPaiEngine\GameServer\FriendModule" />
+      <recent name="E:\GoWorkSpace\PaiPaiEngine\Common\src\com\pdool\DataStruct" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -420,7 +407,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build Aain.go">
+  <component name="RunManager" selected="Go Build.go build gameServer.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="PaiPaiEngine" />
       <working_directory value="$PROJECT_DIR$" />
@@ -436,6 +423,33 @@
       <go_parameters value="-i" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/Common/src/com/Test/Aain.go" />
+      <directory value="$PROJECT_DIR$" />
+      <output_directory value="E:\GoWorkSpace\PaiPaiEngine\BossMgr\out" />
+    </configuration>
+    <configuration name="go build gameServer.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+      <module name="GameServer" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/GameServer/main/gameServer.go" />
+      <directory value="$PROJECT_DIR$" />
+      <output_directory value="E:\GoWorkSpace\PaiPaiEngine\BossMgr\out" />
+    </configuration>
+    <configuration name="go build gameServer.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+      <module name="GameServer" />
+      <working_directory value="E:\GoWorkSpace\PaiPaiEngine\GameServer" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/GameServer/main/gameServer.go" />
+      <directory value="$PROJECT_DIR$" />
+      <output_directory value="E:\GoWorkSpace\PaiPaiEngine\GameServer\out" />
+    </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+      <module name="GameServer" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/GameServer/main/main.go" />
       <directory value="$PROJECT_DIR$" />
       <output_directory value="E:\GoWorkSpace\PaiPaiEngine\BossMgr\out" />
     </configuration>
@@ -455,14 +469,6 @@
       <framework value="gotest" />
       <kind value="DIRECTORY" />
     </configuration>
-    <configuration name="binarySearchTree_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
-      <module name="PaiPaiEngine" />
-      <working_directory value="$PROJECT_DIR$/Common/src/com/pdool/DataStruct" />
-      <go_parameters value="-i" />
-      <framework value="gotest" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/Common/src/com/pdool/DataStruct/binarySearchTree_test.go" />
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -481,16 +487,20 @@
       <node-interpreter value="project" />
       <envs />
     </configuration>
-    <list size="3">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Go Build.go build Aain.go" />
-      <item index="1" class="java.lang.String" itemvalue="Go Test.binarySearchTree_test.go" />
-      <item index="2" class="java.lang.String" itemvalue="Go Test.TestBinarySearchTree in binarySearchTree_test.go" />
+      <item index="1" class="java.lang.String" itemvalue="Go Build.go build main.go" />
+      <item index="2" class="java.lang.String" itemvalue="Go Build.go build gameServer.go" />
+      <item index="3" class="java.lang.String" itemvalue="Go Build.go build gameServer.go (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Go Test.TestBinarySearchTree in binarySearchTree_test.go" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Go Build.go build Aain.go" />
-        <item index="1" class="java.lang.String" itemvalue="Go Test.TestBinarySearchTree in binarySearchTree_test.go" />
-        <item index="2" class="java.lang.String" itemvalue="Go Test.binarySearchTree_test.go" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Go Build.go build gameServer.go" />
+        <item index="1" class="java.lang.String" itemvalue="Go Build.go build gameServer.go (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Go Build.go build main.go" />
+        <item index="3" class="java.lang.String" itemvalue="Go Build.go build Aain.go" />
+        <item index="4" class="java.lang.String" itemvalue="Go Test.TestBinarySearchTree in binarySearchTree_test.go" />
       </list>
     </recent_temporary>
   </component>
@@ -523,17 +533,16 @@
     <frame x="61" y="-8" width="1867" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28112894" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2910902" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34508547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34508547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957264" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5779914" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -552,6 +561,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -582,7 +592,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/Common/src/com/Test/Aain.go</url>
-          <line>18</line>
+          <line>19</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
@@ -590,62 +600,22 @@
           <line>38</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/Common/src/com/Test/Aain.go</url>
+          <line>22</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/GameServer/src/main/gameServer.go</url>
+          <line>17</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="8" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/DataStruct/doublyLinkedList_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-612">
-          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/DataStruct/set_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3038">
-          <caret line="178" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/DataStruct/hashTable_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/DataStruct/priorityQueue_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/DataStruct/binarySearchTree_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/DataStruct/stack_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/DataStruct/linkedList_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="53" column="19" lean-forward="false" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/redis.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -671,7 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
           <caret line="133" column="5" lean-forward="false" selection-start-line="133" selection-start-column="5" selection-end-line="133" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -679,7 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -687,7 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -707,14 +674,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/Data.go" />
     <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/IData.go" />
-    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/CompentMgr.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/BossMgr.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -740,7 +699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="10" column="40" lean-forward="false" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -748,7 +706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -756,7 +713,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -764,15 +720,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/GUID.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -780,9 +727,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
           <caret line="83" column="28" lean-forward="false" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="28" />
-          <folding>
-            <element signature="e#14#66#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -790,7 +734,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -798,7 +741,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
           <caret line="62" column="21" lean-forward="false" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -806,7 +748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -814,9 +755,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-          <folding>
-            <element signature="e#14#43#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -824,7 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -832,7 +769,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -840,18 +776,169 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1300">
           <caret line="52" column="51" lean-forward="false" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Constat.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Constant/PlayerRecord.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/DataStruct/dictionary.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1300">
+          <caret line="52" column="11" lean-forward="false" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/LogManager.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="72" column="25" lean-forward="false" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Constant/PlayerProperty.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/IPropertyHandler.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/Object.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/DataManager.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/Kernel.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/EventMgr.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/src/com/Test/Aain.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
           <folding>
-            <element signature="e#14#43#0" expanded="false" />
+            <element signature="e#14#60#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/GUID.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/Property.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="51" column="16" lean-forward="false" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/main/Main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/CallBacks.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/RecordManager.go">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/reflect/type.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34750">
+          <caret line="1397" column="29" lean-forward="false" selection-start-line="1397" selection-start-column="29" selection-end-line="1397" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/IMgr.go" />
+    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/CompentMgr.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="16" column="19" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="16" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/ModuleMgr.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/Scene.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="19" column="27" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/SceneManager.go">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
           <folding>
-            <element signature="e#14#48#0" expanded="false" />
+            <element signature="e#14#124#0" expanded="true" />
+            <element signature="n#!!block;n#SwitchScene#0" expanded="false" />
+            <element signature="n#!!block;n#afterLeaveSceneGroup#0" expanded="false" />
+            <element signature="n#!!block;n#beforeEnterSceneGroup#0" expanded="false" />
+            <element signature="n#!!block;n#afterEnterSceneGroup#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -864,135 +951,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Constat.go">
+    <entry file="file://$PROJECT_DIR$/GameServer/src/main/FriendModule.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Constant/PlayerRecord.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/DataStruct/dictionary.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1300">
-          <caret line="52" column="11" lean-forward="false" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/LogManager.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="72" column="25" lean-forward="false" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="25" />
+        <state relative-caret-position="175">
+          <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
           <folding>
-            <element signature="e#14#55#0" expanded="true" />
+            <element signature="e#14#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Constant/PlayerProperty.go">
+    <entry file="file://$PROJECT_DIR$/GameServer/src/FriendModule/Handler.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+        <state relative-caret-position="75">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/Scene.go">
+    <entry file="file://$PROJECT_DIR$/GameServer/src/main/gameServer.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="67" column="16" lean-forward="false" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+        <state relative-caret-position="225">
+          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
           <folding>
-            <element signature="e#14#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/Property.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="42" column="23" lean-forward="false" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/IPropertyHandler.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/CallBacks.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="23" column="63" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/Object.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/src/com/Test/Aain.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-          <folding>
-            <element signature="e#14#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/Kernel.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/EventMgr.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/DataManager.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="e#14#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/src/com/pdool/Core/SceneManager.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="60" column="16" lean-forward="true" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
-          <folding>
-            <element signature="e#14#117#0" expanded="true" />
-            <element signature="n#!!block;n#afterLeaveSceneGroup#0" expanded="false" />
-            <element signature="n#!!block;n#beforeEnterSceneGroup#0" expanded="false" />
-            <element signature="n#!!block;n#afterEnterSceneGroup#0" expanded="false" />
+            <element signature="e#14#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1074,6 +1056,17 @@
         </settings>
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
         <settings>
           <splitter-proportions>
             <option name="proportions">

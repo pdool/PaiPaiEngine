@@ -3,11 +3,11 @@ package Core
 import "com/pdool/DataStruct"
 
 type IPropHandler interface {
-	Handle(obj GUID, propName string, oldValue interface{}, newValue interface{})
+	PropHandle(obj GUID, propName string, oldValue interface{}, newValue interface{})
 }
 
 type IRecordHandler interface {
-	Handle(obj GUID, recordName string, opType int, row int, col int, oldValue DataStruct.LinkedList, newValue DataStruct.LinkedList)
+	RecordHandle(obj GUID, recordName string, opType int, row int, col int, oldValue DataStruct.LinkedList, newValue DataStruct.LinkedList)
 }
 
 type IBeforeLeaveSceneHandler interface {

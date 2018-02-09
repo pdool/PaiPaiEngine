@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"testing"
+	"com/pdool/Core"
 )
 type TestI struct {
 
@@ -17,7 +18,7 @@ func TestStack(t *testing.T) {
 
 }
 func main() {
-	t1 := new(TestI)
-	t2 := new(TestI)
+	t1 := Core.NewGuid()
+	t2 := Core.NewGuid()
 	fmt.Println(t1 == t2)
 }
